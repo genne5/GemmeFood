@@ -11,7 +11,7 @@ using GemmeFood.Models;
 
 namespace GemmeFood.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class TodoListController : ApiController
     {
         private TodoItemContext db = new TodoItemContext();
@@ -45,7 +45,7 @@ namespace GemmeFood.Controllers
         }
 
         // PUT api/TodoList/5
-        [ValidateHttpAntiForgeryToken]
+        //[ValidateHttpAntiForgeryToken]
         public HttpResponseMessage PutTodoList(int id, TodoListDto todoListDto)
         {
             if (!ModelState.IsValid)
@@ -80,7 +80,7 @@ namespace GemmeFood.Controllers
         }
 
         // POST api/TodoList
-        [ValidateHttpAntiForgeryToken]
+        //[ValidateHttpAntiForgeryToken]
         public HttpResponseMessage PostTodoList(TodoListDto todoListDto)
         {
             if (!ModelState.IsValid)
@@ -100,7 +100,7 @@ namespace GemmeFood.Controllers
         }
 
         // DELETE api/TodoList/5
-        [ValidateHttpAntiForgeryToken]
+        //[ValidateHttpAntiForgeryToken]
         public HttpResponseMessage DeleteTodoList(int id)
         {
             TodoList todoList = db.TodoLists.Find(id);

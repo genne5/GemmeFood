@@ -9,8 +9,8 @@ using GemmeFood.Models;
 
 namespace GemmeFood.Controllers
 {
-    [Authorize]
-    [ValidateHttpAntiForgeryToken]
+    //[Authorize]
+    //[ValidateHttpAntiForgeryToken]
     public class TodoController : ApiController
     {
         private TodoItemContext db = new TodoItemContext();
